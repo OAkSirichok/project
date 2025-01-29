@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Gaming Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="products.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" aria-current="page">Products</a></li>
+                <ul style="display: flex; justify-content: space-between;">
+                    <!-- เมนูอื่นๆ -->
+                    <li id="cart-container" style="margin-left: auto;">
+                        <a href="#" id="cart-icon">
+                            <!-- ไอคอน PNG สำหรับตะกร้า -->
+                            <img src="cart.png" alt="Cart Icon" id="cart-icon-img" width="30"/>
+                            <span id="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+                <li><a href="checkout.html">Checkout</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Our Products</h1>
+        <section class="product-list">
+            <!-- Product 1 -->
+            <div class="product-item">
+                <img src="hyperx_quadcast.jpg" alt="Gaming Microphone">
+                <h2>Hyperx quadcast</h2>
+                <p>ติดตัวกันกระแทกป้องกันการสั่นสะเทือนในตัว เซนเซอร์แตะเพื่อปิดเสียงพร้อมไฟ LED แสดงสถานะ</p>
+                <p class="price">฿3500</p>
+                <button class="add-to-cart" data-name="Hyperx quadcast" data-image="hyperx_quadcast.jpg" data-price="฿3500">Add to Cart</button>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-item">
+                <img src="Hyperx cloud alpha.jfif" alt="Gaming Headset">
+                <h2>Hyperx cloud alpha</h2>
+                <p>HyperX Dual Chamber Drivers ช่วยให้การแยกเสียงเด่นชัดมากขึ้น การเพี้ยนเสียงลดลง</p>
+                <p>มาตรฐานความสบายในการสวมใส่ตามสไตล์ HyperX</p>
+                <p class="price">฿3000</p>
+                <button class="add-to-cart" data-name="Hyperx cloud alpha" data-image="Hyperx cloud alpha.jfif" data-price="฿3000">Add to Cart</button>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-item">
+                <img src="hyperx pulsefire core.jfif" alt="Gaming Mouse">
+                <h2>Hyperx pulsefire core</h2>
+                <p>เซ็นเซอร์ออพติคอล Pixart 3327
+                    6,200 DPI / 220 IPS / 30 G
+                    ปรับแต่งการใช้งานได้ผ่านซอฟต์แวร์ HyperX NGENUITY
+                    น้ำหนัก: 87 ก.</p>
+                <p class="price">฿2000</p>
+                <button class="add-to-cart" data-name="Hyperx pulsefire core" data-image="hyperx pulsefire core.jfif" data-price="฿2000">Add to Cart</button>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-item">
+                <img src="HyperX Alloy Origins Core.jfif" alt="Gaming Keyboard">
+                <h2>HyperX Alloy Origins Core</h2>
+                <p>Tenkeyless พร้อมสายแบบถอดแยกได้
+                    ไฟพื้นหลัง RGB
+                    ปรับแต่งการใช้งานได้ผ่านซอฟต์แวร์ NGENUITY
+                    ปรับมุมคีย์บอร์ดได้ 3 ระดับ</p>
+                <p class="price">฿4000</p>
+                <button class="add-to-cart" data-name="HyperX Alloy Origins Core" data-image="HyperX Alloy Origins Core.jfif" data-price="฿4000">Add to Cart</button>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-item">
+                <img src="HyperX FURY S.jfif" alt="Gaming Mousepad">
+                <h2>HyperX FURY S</h2>
+                <p>เสริมขึ้นมาเพื่อความแม่นยำสูงสุด</p>
+                <p class="price">฿1000</p>
+                <button class="add-to-cart" data-name="HyperX FURY S" data-image="HyperX FURY S.jfif" data-price="฿1000">Add to Cart</button>
+            </div>
+
+            <!-- More products can be added here -->
+        </section>
+    </main>
+
+    <!-- ตะกร้าสินค้า (sidebar) -->
+    <div id="cart-sidebar" style="display: none;">
+        <h2>Your Cart</h2>
+        <div id="cart-items">
+            <!-- รายการสินค้าจะถูกเพิ่มที่นี่ -->
+        </div>
+        <div id="cart-summary">
+            <p>Total: <span id="cart-total">0</span></p>
+            <button id="checkout-button" type="button"class="btn btn-primary" >Proceed to Checkout</button>
+            <button id="close-cart">Close</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Gaming Store. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
