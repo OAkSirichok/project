@@ -303,4 +303,359 @@ footer {
     height: 200px;
     object-fit: cover;
     border-radius: 8px;
+}/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: rgba(34, 34, 34, 0.9);
+    color: #fff;
+    padding: 15px 0;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+header nav ul li a:hover {
+    color: #ffcc00;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Main Section */
+main {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 3em;
+    font-weight: 700;
+    color: #222;
+}
+
+main p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Login Section */
+.login-section {
+    max-width: 400px;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.login-section h1 {
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.login-section .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.login-section .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.login-section .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.login-section button {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-section button:hover {
+    background: linear-gradient(135deg, #0056b3, #004494);
+}
+
+/* Footer */
+footer {
+    background: rgba(20, 20, 20, 0.9);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+}/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: rgba(34, 34, 34, 0.9);
+    color: #fff;
+    padding: 15px 0;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+header nav ul li a:hover {
+    color: #ffcc00;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Main Section */
+main {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 3em;
+    font-weight: 700;
+    color: #222;
+}
+
+main p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Register Section */
+.register-section {
+    max-width: 400px;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.register-section h1 {
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.register-section .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.register-section .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.register-section .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.register-section button {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.register-section button:hover {
+    background: linear-gradient(135deg, #0056b3, #004494);
+}
+
+/* Footer */
+footer {
+    background: rgba(20, 20, 20, 0.9);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+}/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: rgba(34, 34, 34, 0.9);
+    color: #fff;
+    padding: 15px 0;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+header nav ul li a:hover {
+    color: #ffcc00;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Main Section */
+main {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 3em;
+    font-weight: 700;
+    color: #222;
+}
+
+main p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Checkout Section */
+.checkout-section {
+    max-width: 600px;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.checkout-section h1 {
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.checkout-section .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.checkout-section .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.checkout-section .form-group input,
+.checkout-section .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.checkout-section button {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.checkout-section button:hover {
+    background: linear-gradient(135deg, #0056b3, #004494);
+}
+
+/* Footer */
+footer {
+    background: rgba(20, 20, 20, 0.9);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
 }
