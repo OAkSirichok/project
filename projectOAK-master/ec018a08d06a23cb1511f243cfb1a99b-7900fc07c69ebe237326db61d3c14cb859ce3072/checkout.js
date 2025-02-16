@@ -1,3 +1,14 @@
+document.getElementById('payment-method').addEventListener('change', function() {
+    const paymentMethod = this.value;
+    const promptPayQRCode = document.getElementById('promptpay-qrcode');
+    
+    if (paymentMethod === 'promptpay') {
+        promptPayQRCode.style.display = 'block';
+    } else {
+        promptPayQRCode.style.display = 'none';
+    }
+});
+
 document.getElementById('checkout-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -6,9 +17,10 @@ document.getElementById('checkout-form').addEventListener('submit', function(eve
     const email = document.getElementById('email').value;
     const phone = document.getElementById('phone').value;
     const attachment = document.getElementById('attachment').files[0];
+    const paymentMethod = document.getElementById('payment-method').value;
 
     // Simple client-side validation
-    if (name === '' || address === '' || email === '' || phone === '') {
+    if (name === '' || address === '' || email === '' || phone === '' || paymentMethod === '') {
         alert('Please fill in all required fields.');
         return;
     }

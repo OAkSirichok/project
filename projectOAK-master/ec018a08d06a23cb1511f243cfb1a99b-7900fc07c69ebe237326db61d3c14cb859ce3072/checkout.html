@@ -46,6 +46,18 @@
                         <input type="tel" id="phone" name="phone" required>
                     </div>
                     <div class="form-group">
+                        <label for="payment-method">Payment Method:</label>
+                        <select id="payment-method" name="payment-method" required>
+                            <option value="">Select a payment method</option>
+                            <option value="promptpay">PromptPay</option>
+                            <option value="kbank">KBank</option>
+                        </select>
+                    </div>
+                    <div class="form-group" id="promptpay-qrcode" style="display:none;">
+                        <label for="qrcode">PromptPay QR Code:</label>
+                        <img src="/PromptPay.jpg" alt="PromptPay QR Code">
+                    </div>
+                    <div class="form-group">
                         <label for="attachment">Upload Image:</label>
                         <input type="file" id="attachment" name="attachment" accept="image/*">
                     </div>
