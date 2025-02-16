@@ -94,3 +94,53 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+document.addEventListener('DOMContentLoaded', () => {
+    const orderItems = document.getElementById('order-items');
+    const orderTotal = document.getElementById('order-total');
+    const checkoutForm = document.getElementById('checkout-form');
+
+    // โหลดข้อมูลจาก localStorage
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    // เช็คว่ามีสินค้าในตะกร้าหรือไม่
+    if (cart.length === 0) {
+        orderItems.innerHTML = '<li>Your cart is empty.</li>';
+        orderTotal.textContent = 'Total: ฿0.00';
+        return;
+    }
+
+    let total = 0;
+
+    cart.forEach(item => {
+        if (!item.price || !item.quantity) return; // ป้องกันข้อมูลเสีย
+
+        const li = document.createElement('li');
+        li.textContent = `${item.name} - ฿${item.price.toFixed(2)} x ${item.quantity}`;
+        orderItems.appendChild(li);
+
+        total += item.price * item.quantity;
+    });
+
+    orderTotal.textContent = `Total: ฿${total.toFixed(2)}`;
+
+    checkoutForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const name = document.getElementById('name').value;
+        const address = document.getElementById('address').value;
+        const paymentMethod = document.getElementById('payment-method').value;
+
+        if (!name || !address || !paymentMethod) {
+            alert('Please fill in all shipping details.');
+            return;
+        }
+
+        alert(`Thank you, ${name}! Your order has been placed.`);
+
+        // ล้างตะกร้าหลังจากสั่งซื้อ
+        localStorage.removeItem('cart');
+        checkoutForm.reset();
+        orderItems.innerHTML = '<li>Your cart is empty.</li>';
+        orderTotal.textContent = 'Total: ฿0.00';
+    });
+});

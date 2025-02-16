@@ -111,5 +111,13 @@ window.addEventListener('load', () => {
         updateCart();  // อัปเดตข้อมูลในตะกร้าเมื่อโหลดหน้าใหม่
     }
 });
+document.addEventListener('DOMContentLoaded', () => {
+    const checkoutButton = document.getElementById('checkout-button');
+    if (checkoutButton) {
+        checkoutButton.addEventListener('click', () => {
+            window.location.href = 'checkout.html';
+        });
+    }
+});
 
 
